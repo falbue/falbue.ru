@@ -17,9 +17,9 @@
 	padding: 20px;
 }
 
-.card>main{
-	flex:1;
-	margin: 10px 0;
+.card > main {
+  flex: 1;
+  margin: 10px 0;
+  overflow-x: auto;
 }
-
 .card>header{width: 80%}
