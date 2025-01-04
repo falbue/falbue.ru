@@ -1,10 +1,12 @@
-
 #projects-container>.card{
 	margin: 10px;
 	max-height: 350px;
 	max-width: 350px;
 }
 
+@media (max-width: 768px) {
+	#projects-container>.card{margin: 10px 0;}
+}
 .card{
 	box-sizing: border-box;
 	display: flex;
@@ -20,6 +22,7 @@
 .card > main {
   flex: 1;
   margin: 10px 0;
+  margin-bottom: 20px;
   overflow-x: auto;
 }
 .card>header{width: 80%}

@@ -107,6 +107,7 @@ icon{
 
 svg{
 	width: auto;
+	height: auto;
 	fill: var(--text-color);
 	stroke-width: 0px;
 }
