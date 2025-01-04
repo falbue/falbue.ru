@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+	a, button {
+		-webkit-tap-highlight-color: transparent;
+		outline: none;
+	}
+
+	main{width: 95%}
+	.container{
+		flex-direction: column;
+	}
+
+
+	h1{font-size: 48px}
+	h2{font-size: 32px}
+	h3{font-size: 24px}
+	h4{font-size: 16px}
+	h5{font-size: 12px}
+	h6{font-size: 8px}
+
+	.h1{height: 48px; width: 48px}
+	.h2{height: 32px; width: 32px}
+	.h3{height: 24px; width: 24px}
+	.h4{height: 16px; width: 16px}
+	.h5{height: 12px; width: 12px}
+	.h6{height: 8px; width: 8px}
+
+
+	.card{
+		width: 95%;
+		margin-right: 0px;
+		min-width: 10px;
+		max-width: 95%;
+		padding: 10px;
+	}
+}

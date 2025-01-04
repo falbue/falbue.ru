@@ -1,0 +1,25 @@
+
+#projects-container>.card{
+	margin: 10px;
+	max-height: 350px;
+	max-width: 350px;
+}
+
+.card{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: var(--bg-second);
+	min-height: 350px;
+	min-width: 350px;
+	border-radius: var(--br-radius);
+	padding: 20px;
+}
+
+.card>main{
+	flex:1;
+	margin: 10px 0;
+}
+
+.card>header{width: 80%}

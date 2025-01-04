@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/color.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main-styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/position.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animation.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/card.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/falbue/sections.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mobile.css') }}">
+
+	<script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/falbue/pulse.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/falbue/open-projects.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/icons.js') }}"></script>
+	<title>Главная</title>
+</head>
+<body>
+	<main>
+		<section class="bio center">
+			<div class="image">
+				<div class="color">
+				</div>
+				<div>
+					<img id="myBox" class="cicrle" src="{{ url_for('static', filename='images/avatar.png') }}" alt="avatar">
+				</div>
+				<div class="name">
+					<h1 onclick="toggleTheme()">falbue</h1>
+					<h3>Дмитрий Миногин</h3>
+				</div>
+			</div>
+			<nav class="links">
+				<a href="https://t.me/falbue"><icon open="telegram" class="h2"></icon></a>
+				<a href="https://github.com/falbue"><icon open="github" class="h2"></icon></a>
+				<a href="https://vk.com/falbue"><icon open="vk" class="h2"></icon></a>
+			</nav>
+		</section>
+		<section>
+			<header>
+				<h2># Проекты</h2>
+			</header>
+			<div id="projects-container" class="container"></div>
+		</section>
+	</main>
+</body>
+</html>

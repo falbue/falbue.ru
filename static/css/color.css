@@ -1,0 +1,25 @@
+:root {
+  --black: #1A1A36;
+  --white: #cdbce2;
+  --br-radius: 12px;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+/*    --bg-main: #5f3b8a;*/
+    --bg-main: var(--black);
+    --text-color: var(--white);
+    --bg-second: var(#2E2661)
+  }
+}
+
+/* Стили для светлой темы */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-main: var(--white);
+    --text-color: var(--black);
+    --bg-second: #af99cc;
+  }
+}
