@@ -43,8 +43,8 @@ def get_repo_data(owner, repo_name):
         print(f"Ошибка при запросе к GitHub API: {response.status_code}")
 
 
-parser = argparse.ArgumentParser(description='Получение данных о репозитории с GitHub')
+parser = argparse.ArgumentParser(description='Получение данных о публичном репозитории с GitHub')
+parser.add_argument('owner', type=str, help='Указание автора репозитория')
 parser.add_argument('repo_name', type=str, help='Название репозитория на GitHub')
 args = parser.parse_args()
-owner = "falbue"
-get_repo_data(owner, args.repo_name)
+get_repo_data(args.owner, args.repo_name)
