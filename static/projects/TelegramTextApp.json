@@ -1,7 +1,0 @@
-{
-    "name": "TelegramTextApp",
-    "about": null,
-    "url": "https://github.com/Falbue/TelegramTextApp",
-    "homepage": null,
-    "readme": "# Проект закрыт\nНе удалось развить идею\n\n---\n\n**<h1>Telegram-Text-Apps</h1>**\nПроект, для быстрого и удобного создания текстовых приложений. По факту, это набор функций, которые делают тоже самое, что Вы могли бы написать сами\n\n**<h2>Текстовое приложение</h2>**\nПод текстовым приложением, подразумевается, приложение, которе состоит из одного сообщения и все действия с ботом происходят через __inline-button__\n\n## Подготовка\nДля работы **TTA** требуется установка **python**, последней версии\n```shell\nwinget install python\n```\n\nДля установки библиотеки через pip, нужно установить git\n```shell\nwinget install --id Git.Git -e --source winget\n```\n\n## Установка\n```shell\npip install git+https://github.com/Falbue/TelegramTextApp.git\n```\n\n## Использование\n### Создание приложения\n```shell\nTTA-create name project api id_admin\n```\n* [Получение API бота](https://t.me/BotFather)\n* [Получение вашего id](https://t.me/getmyid_bot)\n\n### Запуск приложения\nДля запуска конкретного приложения:\n```shell\nTTA name_project\n```\n\nДля запуска всех приложений (beta):\n```shell\nTTA ALL\n```\n\n### Дополнительные команды\nОбновление кода TTA, если была скачана новая версия библиотеки\n```shell\nTTA-updata project_name\n```\n\nДобавление приложения в автозапуск:\n```shell\nTTA-autostart project_name\n```\n"
-}
