@@ -20,12 +20,16 @@ fetch('/api/projects')
 
         const footer = document.createElement('footer');
         const githubLink = document.createElement('a');
-        githubLink.href = project.url;
-        const githubIcon = document.createElement('img');
-        githubIcon.classList.add('h3');
-        githubIcon.src = '/static/icons/github.svg'; // Укажите путь к вашему изображению
-        githubLink.appendChild(githubIcon);
-        footer.appendChild(githubLink);
+        fetch(`/static/icons/github.svg`)
+        .then(response => response.text())
+        .then(svgText => {
+            githubLink.href = project.url;
+            githubLink.innerHTML = svgText;
+            githubLink.classList.add('h3');
+            githubLink.appendChild(githubLink);
+            footer.appendChild(githubLink);
+        });
+
 
         const homepageLink = document.createElement('a');
         homepageLink.href = project.homepage;

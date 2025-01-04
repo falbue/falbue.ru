@@ -10,7 +10,7 @@
   :root {
     --bg-main: var(--black);
     --text-color: var(--white);
-    --bg-second: var(#2E2661)
+    --bg-second: #2E2661
   }
 }
 

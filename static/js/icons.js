@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const customElements = document.querySelectorAll('icon');
 
