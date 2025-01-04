@@ -20,14 +20,13 @@ fetch('/api/projects')
 
         const footer = document.createElement('footer');
         const githubLink = document.createElement('a');
+        footer.appendChild(githubLink);
         fetch(`/static/icons/github.svg`)
         .then(response => response.text())
         .then(svgText => {
             githubLink.href = project.url;
             githubLink.innerHTML = svgText;
             githubLink.classList.add('h3');
-            githubLink.appendChild(githubLink);
-            footer.appendChild(githubLink);
         });
 
 
