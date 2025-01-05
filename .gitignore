@@ -1,2 +1,3 @@
 static/projects/
 __pycache__/
+config.py
