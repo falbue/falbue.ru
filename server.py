@@ -12,10 +12,5 @@ app.register_blueprint(LiveMessage_bp, url_prefix='/live-message')
 def index():
     return render_template('index.html')
 
-<<<<<<< HEAD
 socketio.init_app(app)
 socketio.run(app, host='0.0.0.0', debug=True, allow_unsafe_werkzeug=True)
-=======
-# Запуск приложения
-app.run(host='0.0.0.0', debug=True, port=80)
->>>>>>> origin/main
