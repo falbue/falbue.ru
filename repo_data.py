@@ -4,7 +4,7 @@ import base64
 import argparse
 import os
 
-SAVE = "static/projects"
+SAVE = "coding/static/projects"
 
 def create_folder(path):
     if not os.path.exists(path):
