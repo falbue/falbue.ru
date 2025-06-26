@@ -14,6 +14,15 @@ jobs:
       - name: Настройка SSH
         run: |
           mkdir -p ~/.ssh
+          
+      - name: Очистка старого .env
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            rm -rf /tmp/.env  # Удаляем, если это директория
 
       - name: отправка .prod.env
         uses: appleboy/scp-action@v1
@@ -24,14 +33,6 @@ jobs:
           source: ".prod.env"
           target: "/tmp/.env"
       
-      - name: Очистка старого .env
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            rm -rf /tmp/.env  # Удаляем, если это директория
       
       - name: Деполой
         uses: appleboy/ssh-action@v1
