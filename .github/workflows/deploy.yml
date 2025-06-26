@@ -22,8 +22,8 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: ".prod.env"
-          target: "/tmp/.env"
-
+          target: "/tmp/${GITHUB_RUN_ID}.env"
+      
       - name: Деполой
         uses: appleboy/ssh-action@v1
         with:
