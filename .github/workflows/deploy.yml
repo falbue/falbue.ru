@@ -11,12 +11,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup SSH
+      - name: Настройка SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
 
-      - name: Transfer .prod.env
+      - name: отправка .prod.env
         uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.SERVER_IP }}
@@ -25,7 +24,7 @@ jobs:
           source: ".prod.env"
           target: "/tmp/${GITHUB_RUN_ID}.env"
 
-      - name: Execute Deploy Script
+      - name: Деполой
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.SERVER_IP }}
