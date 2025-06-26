@@ -2,23 +2,25 @@
   --black: #1A1A36;
   --white: #cdbce2;
   --br-radius: 12px;
+  
+  /* Значения по умолчанию (светлая тема) */
+  --bg-main: var(--white);
+  --text-color: var(--black);
+  --bg-second: #af99cc;
 }
 
+/* Тёмная тема - применяется при наличии класса .dark-theme */
+:root.dark-theme {
+  --bg-main: var(--black);
+  --text-color: var(--white);
+  --bg-second: #2E2661;
+}
 
-
+/* Резервный вариант - если JavaScript не сработал, используем системные настройки */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not(.dark-theme) {
     --bg-main: var(--black);
     --text-color: var(--white);
-    --bg-second: #2E2661
-  }
-}
-
-/* Стили для светлой темы */
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-main: var(--white);
-    --text-color: var(--black);
-    --bg-second: #af99cc;
+    --bg-second: #2E2661;
   }
 }

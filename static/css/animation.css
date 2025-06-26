@@ -1,5 +1,2 @@
 a:hover{transform: scale(1.05);}
 a:active{transform: scale(0.95);}
-
-.card:hover{transform: scale(1);}
-.card:active{transform: scale(1);}
