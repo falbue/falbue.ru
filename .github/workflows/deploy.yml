@@ -42,4 +42,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             chmod +x ~/deploy.sh
-            ~/deploy.sh
+            ~/deploy.sh ${{ github.repository_owner }} ${{ github.event.repository.name }}
