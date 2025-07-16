@@ -58,3 +58,41 @@ section.bio .name h1:hover + h3 {
 
 
 }
+
+.card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 300px;
+	max-width: 700px;
+	border: 1px solid black;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 12px;
+	padding: 0;
+}
+
+.card>main{
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.card img{
+	width: 100%;
+	border-radius: 12px;
+}
+
+.topics p{
+	padding: 4px;
+	border-radius: 12px;
+	background-color: rgba(0, 0, 255, 0.3);
+	color: rgb(0, 0, 255, 1);
+}
+
+.topics{
+	margin: 20px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 4px;
+}
