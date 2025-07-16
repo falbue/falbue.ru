@@ -65,8 +65,11 @@ section.bio .name h1:hover + h3 {
 	align-items: center;
 	min-width: 300px;
 	max-width: 700px;
-	border: 1px solid black;
-	background-color: rgba(255, 255, 255, 0.3);
+	background: var(--glass-bg);
+	backdrop-filter: blur(var(--glass-blur));
+	-webkit-backdrop-filter: blur(var(--glass-blur));
+	border: var(--glass-border);
+  	box-shadow: var(--glass-shadow-outer), var(--glass-shadow-inner);
 	border-radius: 12px;
 	padding: 0;
 }
@@ -78,14 +81,14 @@ section.bio .name h1:hover + h3 {
 
 .card img{
 	width: 100%;
-	border-radius: 12px;
+	border-radius: 12px 12px 0 0 ;
 }
 
 .topics p{
-	padding: 4px;
+	padding: 4px 6px;
 	border-radius: 12px;
-	background-color: rgba(0, 0, 255, 0.3);
-	color: rgb(0, 0, 255, 1);
+	background-color: rgba(71, 139, 230, 0.3);
+	color: rgba(71, 139, 230, 0.9);
 }
 
 .topics{

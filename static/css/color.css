@@ -7,14 +7,14 @@
   --bg-main: var(--white);
   --text-color: var(--black);
   --bg-second: #af99cc;
+
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-blur: 12px;
+  --glass-border: 2px solid rgba(255, 255, 255, 0.25);
+  --glass-shadow-outer: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --glass-shadow-inner: inset 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
-/* Тёмная тема - применяется при наличии класса .dark-theme */
-:root.dark-theme {
-  --bg-main: var(--black);
-  --text-color: var(--white);
-  --bg-second: #2E2661;
-}
 
 /* Резервный вариант - если JavaScript не сработал, используем системные настройки */
 @media (prefers-color-scheme: dark) {
@@ -23,4 +23,15 @@
     --text-color: var(--white);
     --bg-second: #2E2661;
   }
+}
+
+/* Тёмная тема - применяется при наличии класса .dark-theme */
+:root.dark-theme {
+  --bg-main: var(--black);
+  --text-color: var(--white);
+  --bg-second: #2E2661;
+  --glass-bg: rgba(0, 0, 0, 0.15);
+  --glass-blur: 12px;
+  --glass-border: 2px solid rgba(255, 255, 255, 0.25);
+  --glass-shadow-outer: 0 4px 20px rgba(255, 255, 255, 0.1);
 }
