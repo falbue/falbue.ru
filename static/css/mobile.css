@@ -26,4 +26,13 @@
 		max-width: 95%;
 		padding: 10px;
 	}
+
+	section.bio img{
+		width: 60vw;
+		/*height: 200px;*/
+	}
+	section.bio nav a{padding: 0 4px}
+
+	section.bio .image{flex-direction: column;}
+	section.bio .image div{padding-bottom: 20px}
 }
