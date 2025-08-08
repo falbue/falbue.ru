@@ -1,4 +1,4 @@
-PROJECT=site
+PROJECT=gunicorn
 DOMAIN=falbue.ru
 SERVICE_NAME=falbue
 
