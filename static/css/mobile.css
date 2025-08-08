@@ -13,7 +13,7 @@
 	h1{font-size: 48px}
 	h2{font-size: 32px}
 	h3{font-size: 24px}
-	h4{font-size: 16px}
+	h4{font-size: 18px}
 	h5{font-size: 12px}
 	h6{font-size: 8px}
 
@@ -29,7 +29,7 @@
 
 	section.bio img{
 		width: 60vw;
-		/*height: 200px;*/
+		max-width: 300px;
 	}
 	section.bio nav a{padding: 0 4px}
 
